@@ -144,6 +144,7 @@ public class FXMLDocumentController implements Initializable {
                 try {
                     float solution = operate(operator, dataFirstF, dataSecondF);
                     dataFirstF = solution;
+                    operator = "";
                     display.setText(String.valueOf(format.format(dataFirstF)));
                 } catch (Exception e) {
                     errorMessage();
